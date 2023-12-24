@@ -1,0 +1,8 @@
+{
+  "imports": {
+    "discord.js": "npm:discord.js@14.14.1",
+    "@discordjs/builders": "npm:@discordjs/builders@1.7.0",
+    "@discordjs/voice": "npm:@discordjs/voice@0.16.1",
+    "libsodium-wrappers": "npm:libsodium-wrappers@0.7.13"
+  }
+}

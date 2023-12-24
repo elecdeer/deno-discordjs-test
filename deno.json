@@ -1,0 +1,7 @@
+{
+  "tasks": {
+    "start": "deno run --allow-all src/main.ts"
+  },
+  "nodeModulesDir": true,
+  "importMap": "import_map.json"
+}
