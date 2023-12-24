@@ -8,6 +8,9 @@ import {
 } from "discord.js";
 import { generateDependencyReport } from "@discordjs/voice";
 
+import "libsodium-wrappers";
+import "opusscript";
+
 import { load } from "https://deno.land/std@0.209.0/dotenv/mod.ts";
 
 import { voiceCmd } from "./voiceCmd.ts";
@@ -53,7 +56,7 @@ client.once(Events.ClientReady, (readyClient) => {
   console.log(`Ready! Logged in as ${readyClient.user.tag}`);
 
   readyClient.on(Events.InteractionCreate, (interaction) => {
-    console.log("interaction create", interaction);
+    console.log("interaction create");
     if (!interaction.isChatInputCommand()) return;
 
     if (interaction.commandName !== "voice") return;
